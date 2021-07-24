@@ -25,8 +25,8 @@ In this project I made a light blink in morse code. You are able to write to a t
     * then sends one bit at a time to a pin using PWM to soften transitions
     * `morseOut.asm`
     * Pulse with Modulation(PWM): microcontroller has built in PWM
-        *** Accidentally chose pins with no built in PWM
-        *** To remedy this, implemented PWM in software
+        * Accidentally chose pins with no built in PWM
+        * To remedy this, implemented PWM in software
 
 ### Dimming
     * I wanted to be able to control the maximum brightness of the light so it could be used durring the day or at night.
