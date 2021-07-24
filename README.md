@@ -35,7 +35,7 @@ In this project I made a light blink in morse code. You are able to write to a t
 ### PCB
 I etched the PCB at home. Mixed through-hole and surface mount parts. 
 
-<img src="images/pcbBack.JPG" width = "50%" />
+<img src="images/pcbBack.JPG" width = "40%" />
 
 #### Components
 * 1 transistor
