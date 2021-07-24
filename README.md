@@ -11,11 +11,6 @@ In this project I made a light blink in morse code. You are able to write to a t
 **Name:** ATTiny13
 **Memory:** 1k of program memory
 
-### Dimming
-	** I wanted to be able to control the maximum brightness of the light so it could be used durring the day or at night.
-    ** With only 8 bits of PWM on the microcontroller this would be impossible to achieve while keeping the transitions looking smooth even at low brightnesses. 
-    ** This is why I included the potentiometer and transitor
-    ** It isn't a perfect circuit as it is tempurature sensitive and sensitive to changes in supply voltage, but I wasn't able to notice these issues when using the light.
 
 ### Programming Languages Used
 * C
@@ -32,10 +27,16 @@ In this project I made a light blink in morse code. You are able to write to a t
         *** Accidentally chose pins with no built in PWM
         *** To remedy this, implemented PWM in software
 
+### Dimming
+    ** I wanted to be able to control the maximum brightness of the light so it could be used durring the day or at night.
+    ** With only 8 bits of PWM on the microcontroller this would be impossible to achieve while keeping the transitions looking smooth even at low brightnesses. 
+    ** This is why I included the potentiometer and transitor
+    ** It isn't a perfect circuit as it is tempurature sensitive and sensitive to changes in supply voltage, but I wasn't able to notice these issues when using the light.
+
 ### PCB
 I etched the PCB at home. Mixed through-hole and surface mount parts. 
 
-* Insert image* 
+![PCB Back](/images/pcbBack.JPG) 
 
 #### Components
 * 1 transistor
@@ -49,6 +50,8 @@ It worked ok. Storing morse code the way I did was not space efficient for long 
 * insert link to video or image * 
 
 ### Takeaways
-I learned to know your parts
+I wish I had included reverse polarity protection.
+I created the pcb before finishing the code. However, there was no need for this. I could have got the circuit woringing on a breadboard before making the PCB and this would have prevented the mistake of using the wrong pin to control the leds. Alternativily I could have been more careful and not assumed all pins had PWM capability.
+
 If I were to do this project again I would modify the pcb instead of software to deal with PWM error. I knew I was only making one so it seemed like a more eligant solution to keep the pcb intact, but now I dont think that was the best option. 
-I was able to work on my skills combining different programs to integrate.
+Its nice to have different programs to integrate.
