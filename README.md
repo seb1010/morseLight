@@ -5,7 +5,6 @@
 In this project I made a light blink in morse code. You are able to write to a text file and the corresponding morse code will show on the light. PWM was used to when turning on and off light for smooth transitions. Input length was restricted by the program memory of the microcontroller. There is also a switch to turn off the morse code and keep the light on all the time.
 
 ## Implementation
-*WRITE ABOUT HOW PARTS CONNECTED*
 
 ### Microcontroller
 **Name:** ATTiny13
@@ -36,7 +35,7 @@ In this project I made a light blink in morse code. You are able to write to a t
 ### PCB
 I etched the PCB at home. Mixed through-hole and surface mount parts. 
 
-![PCB Back](/images/pcbBack.JPG) 
+![PCB Back](/images/pcbBack.JPG =50x) 
 
 #### Components
 * 1 transistor
