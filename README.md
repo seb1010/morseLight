@@ -47,8 +47,9 @@ I etched the PCB at home. Mixed through-hole and surface mount parts.
 ## Project Result and Takeaways
 
 ### Results
-It worked ok. Storing morse code the way I did was not space efficient for long messages. Also the c program was very sensitive to white space, so you have to be carful with formatting. That could definitly use improvement.
-[Video of Light Blinking on YouTube](https://youtu.be/B2VOs5uNV_o)
+*It worked ok. Storing morse code the way I did was not space efficient for long messages. Also the c program was very sensitive to white space, so you have to be carful with formatting. That could definitly use improvement.
+
+*[Video of Light Blinking on YouTube](https://youtu.be/B2VOs5uNV_o)
 
 ### Takeaways
 I wish I had included reverse polarity protection.
