@@ -6,7 +6,7 @@ In this project I made a light blink in morse code. You are able to write to a t
 
 
 ## Implementation
-<img src="images/schematic" width = "80%" />
+<img src="images/schematic.png" width = "80%" />
 
 ### Microcontroller
 **Name:** ATTiny13
@@ -29,10 +29,10 @@ In this project I made a light blink in morse code. You are able to write to a t
         *** To remedy this, implemented PWM in software
 
 ### Dimming
-    ** I wanted to be able to control the maximum brightness of the light so it could be used durring the day or at night.
-    ** With only 8 bits of PWM on the microcontroller this would be impossible to achieve while keeping the transitions looking smooth even at low brightnesses. 
-    ** This is why I included the potentiometer and transitor
-    ** It isn't a perfect circuit as it is tempurature sensitive and sensitive to changes in supply voltage, but I wasn't able to notice these issues when using the light.
+    * I wanted to be able to control the maximum brightness of the light so it could be used durring the day or at night.
+    * With only 8 bits of PWM on the microcontroller this would be impossible to achieve while keeping the transitions looking smooth even at low brightnesses. 
+    * This is why I included the potentiometer and transitor
+    * It isn't a perfect circuit as it is tempurature sensitive and sensitive to changes in supply voltage, but I wasn't able to notice these issues when using the light.
 
 ### PCB
 I etched the PCB at home. Mixed through-hole and surface mount parts. 
