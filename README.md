@@ -18,7 +18,7 @@ In this project I made a light blink in morse code. You are able to write to a t
     * Converting text to a binary code (morse code), expressed as hex in a ascii file.
     * `textToMorse.c`
     * This output file can be read directly by the assembler I used (avra)
-    * The assembler wrote the binary code into the program memory
+    * The assembler writes the binary code into the program memory
 
 * Assembly (for ATTiny13)
     * loads one byte at a time from the program memory
