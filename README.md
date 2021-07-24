@@ -4,7 +4,9 @@
 
 In this project I made a light blink in morse code. You are able to write to a text file and the corresponding morse code will show on the light. PWM was used to when turning on and off light for smooth transitions. Input length was restricted by the program memory of the microcontroller. There is also a switch to turn off the morse code and keep the light on all the time.
 
+
 ## Implementation
+<img src="images/schematic" width = "80%" />
 
 ### Microcontroller
 **Name:** ATTiny13
@@ -13,16 +15,16 @@ In this project I made a light blink in morse code. You are able to write to a t
 
 ### Programming Languages Used
 * C
-    ** Converting text to a binary code (morse code), expressed as hex in a ascii file.
-    ** `textToMorse.c`
-    ** This output file can be read directly by the assembler I used (avra)
-    ** The assembler wrote the binary code into the program memory
+    * Converting text to a binary code (morse code), expressed as hex in a ascii file.
+    * `textToMorse.c`
+    * This output file can be read directly by the assembler I used (avra)
+    * The assembler wrote the binary code into the program memory
 
 * Assembly (for ATTiny13)
-    ** loads one byte at a time from the program memory
-    ** then sends one bit at a time to a pin using PWM to soften transitions
-    ** `morseOut.asm`
-    ** Pulse with Modulation(PWM): microcontroller has built in PWM
+    * loads one byte at a time from the program memory
+    * then sends one bit at a time to a pin using PWM to soften transitions
+    * `morseOut.asm`
+    * Pulse with Modulation(PWM): microcontroller has built in PWM
         *** Accidentally chose pins with no built in PWM
         *** To remedy this, implemented PWM in software
 
