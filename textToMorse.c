@@ -75,7 +75,6 @@ int createMorseBytes( unsigned int lettersIn[], unsigned char bytesOut[], int nu
 
   for(i=0; i < numLetters - 1 ; i++){
     oldLetterToMod = lettersIn[i];
-//printf("\n\ni = %d\n", i);
     letterToMod = lettersIn[i];
     bitsInLetter = 0;
     while(letterToMod > 0){
@@ -94,18 +93,15 @@ int createMorseBytes( unsigned int lettersIn[], unsigned char bytesOut[], int nu
     else{
       letterToMod = lettersIn[i];
       if(bitsLeftInChar > bitsInLetter){
-//printf("bits in char %d, bits in letter %d, letterToMod %x (1)\n",bitsLeftInChar, bitsInLetter, letterToMod);
         numShifts = 0;
         while(bitsInLetter + numShifts < bitsLeftInChar){
           numShifts++;
           letterToMod *= 2;
         }
         bitsLeftInChar -= bitsInLetter;
-//printf("bytesOut[%d] += %x (char bigger)\n", j, letterToMod);
           bytesOut[j] += letterToMod;
         }
         else{
-//printf("bits in char %d, bits in letter %d, letterToMod %x (letter > char)\n",bitsLeftInChar, bitsInLetter, letterToMod);
           while(bitsInLetter >= bitsLeftInChar){
             numShifts = 0;
             twoToTheShift = 1;
@@ -115,14 +111,12 @@ int createMorseBytes( unsigned int lettersIn[], unsigned char bytesOut[], int nu
               twoToTheShift *= 2;
             }
             bitsInLetter -= bitsLeftInChar;
-//printf("bytesOut[%d] += %x (2)\n", j, letterToMod);
             bytesOut[j] += letterToMod;
             j++;
             bitsLeftInChar = 8;
             letterToMod = oldLetterToMod - twoToTheShift * letterToMod;
             oldLetterToMod = letterToMod;
           }
-//printf("bits in char %d, bits in letter %d, letterToMod %x (3)\n",bitsLeftInChar, bitsInLetter, letterToMod);
           numShifts = 0;
           twoToTheShift = 1;
           while(bitsInLetter + numShifts < bitsLeftInChar){
@@ -130,7 +124,6 @@ int createMorseBytes( unsigned int lettersIn[], unsigned char bytesOut[], int nu
             letterToMod *= 2;
             twoToTheShift *= 2;
           }
-//printf("bytesOut[%d] += %x (3)\n", j, letterToMod);
           bytesOut[j] += letterToMod;
           letterToMod = oldLetterToMod - letterToMod * twoToTheShift;
           oldLetterToMod = letterToMod;
@@ -142,8 +135,6 @@ int createMorseBytes( unsigned int lettersIn[], unsigned char bytesOut[], int nu
       }
     }    
   }
-//  for(i=0;i < j;i++)
-  //  printf("%x\n",bytesOut[i]);
   return j;
 }
 
