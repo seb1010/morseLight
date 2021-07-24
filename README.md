@@ -48,7 +48,7 @@ I etched the PCB at home. Mixed through-hole and surface mount parts.
 
 ### Results
 It worked ok. Storing morse code the way I did was not space efficient for long messages. Also the c program was very sensitive to white space, so you have to be carful with formatting. That could definitly use improvement.
-* insert link to video or image * 
+[youtube link](https://youtu.be/B2VOs5uNV_o)
 
 ### Takeaways
 I wish I had included reverse polarity protection.
