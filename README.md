@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-In this project I made a light blink in morse code. You are able to write to a text file and the corresponding morse code will show on the light. PWM was used to when turning on and off light for smooth transitions. Input length was restricted by the program memory of the microcontroller. There is also a switch to turn off the morse code and keep the light on all the time.
+In this project I made a light blink in morse code. You are able to write to a text file and the corresponding morse code can be programmed into the memory of a microcontroller. PWM was used to when turning on and off light for smooth transitions. Input length was restricted by the program memory of the microcontroller. There is also a switch to turn off the morse code and keep the light on all the time.
 
 
 ## Implementation
